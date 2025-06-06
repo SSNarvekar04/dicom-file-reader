@@ -14,7 +14,6 @@ class App extends Component{
     const file = e.target.files[0];
     const fileName = file.name;
     const fileType = file.type;
-
     const reader = new FileReader();
     if (fileType == 'application/dicom' || fileName.toLowerCase().endsWith('.dcm')) {
     reader.readAsArrayBuffer(file);

@@ -34,7 +34,7 @@ class App extends Component{
         const ImageType = (dataSet.string('x00080008') || '');
         const SamplesPerPixel = dataSet.uint16('x00280002');
         const Rows = dataSet.uint16('x00280010');
-        const Columns = dataSet.uint16('x00280011');
+        const Columns = dataSet.uint16('x00280009');
         
 
         this.setState({
